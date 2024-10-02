@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú despegable</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <nav class="nav">
+        <ul class="list">
+            <center>
+            <h2>que quieres para hoy</h2>
+            </center>
+            <li class="list__item">
+                <div class="list__button">
+                    <img src="assets/dashboard.svg" class="list__img">
+                    <a href="#" class="nav__link">Inicio</a>
+                </div>
+            </li>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="assets/docs.svg" class="list__img">
+                    <a href="#" class="nav__link">Servicios</a>
+                    <img src="assets/arrow.svg" class="list__arrow">
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="C:\Users\ESTUDIANTE\Desktop\paginaa\paginadebrayan\index.html" class="nav__link nav__link--inside">postres</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="C:\Users\ESTUDIANTE\Desktop\paginaa\paginadebrayan\Pagina-de-Producto-1-main\index.html" class="nav__link nav__link--inside">panaderia</a>
+                    </li>
+                </ul>
+
+            </li>
+
+
+            <li class="list__item">
+                <div class="list__button">
+                    <img src="assets/stats.svg" class="list__img">
+                    <a href="C:\Users\ESTUDIANTE\Desktop\paginaa\grafica\index.html" class="nav__link">Estadisticas</a>
+                </div>
+            </li>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="assets/bell.svg" class="list__img">
+                    <a href="#" class="nav__link">pedir algo mas</a>
+                    <img src="assets/arrow.svg" class="list__arrow">
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="C:\Users\ESTUDIANTE\Desktop\paginaa\tienda2.2\index.html" class="nav__link nav__link--inside">cafeteria</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="C:\Users\ESTUDIANTE\Desktop\paginaa\tienda2.2\addtocardv2-main\index.html" class="nav__link nav__link--inside">almuerzos</a>
+                    </li>
+                </ul>
+
+            </li>
+
+
+            <li class="list__item">
+                <div class="list__button">
+                    <img src="assets/message.svg" class="list__img">
+                    <a href="C:\Users\ESTUDIANTE\Desktop\paginaa\grafica\contacto.html" class="nav__link">Contacto</a>
+                </div>
+            </li>
+
+        </ul>
+    </nav>
+    <div class="slider">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slide first">
+                <img src="C:\Users\ESTUDIANTE\Desktop\paginaa\paginadebrayan\images\menu-3.jpg">
+
+            </div>
+
+            <div class="slide">
+                <img src="C:\Users\ESTUDIANTE\Desktop\paginaa\tienda2.2\img\footer-bg.jpg" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="C:\Users\ESTUDIANTE\Desktop\paginaa\paginadebrayan\images\hero.jpg" alt="">
+            </div>
+
+            <div class="slide">
+                <img src="C:\Users\ESTUDIANTE\Desktop\paginaa\tienda2.2\img\about.jpg" alt="">
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+
+            </div>
+
+
+        </div>
+        <div class="nav-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+    </div>
+
+    <script defer src="menu.js"></script>
+</body>
+</html>

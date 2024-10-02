@@ -1,0 +1,62 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Informe con Gráfico de Barras</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Incluir Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Informe con Gráfico de Barras</h1>
+
+    <!-- Agregar un contenedor para el gráfico -->
+    <canvas id="barChart" width="10" height="5"></canvas>
+
+    <script>
+        // Datos para el gráfico de barras
+        var data = {
+            labels: ["postres", "cafe", "pan", "almuerzos", "entre otros"],
+            datasets: [{
+                label: "preferencias",
+                data: [6.50, 8.00, 7.50, 9, 20, 8, 20],
+                backgroundColor: 'rgb(4, 24, 124)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        };
+
+        // Opciones del gráfico de barras
+        var options = {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            },
+            plugins: {
+                datalabels: {
+                    anchor: 'end',
+                    align: 'end',
+                    offset: 4,
+                    color: 'red',
+                    font: {
+                        weight: 'bold',
+                        size: 12
+                    }
+                }
+            }
+        };
+
+        // Crear el gráfico de barras
+        var ctx = document.getElementById('barChart').getContext('2d');
+        var barChart = new Chart(ctx, {
+            type: 'bar',
+            data: data,
+            options: options
+        });
+    </script>
+    <center>
+        <button class="my-button"><a href="C:\Users\ESTUDIANTE\Desktop\paginaa\index.html">Haz clic aquí</a></button>
+    </center>
+</body>
+</html>
